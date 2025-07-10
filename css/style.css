@@ -197,11 +197,14 @@
     position: relative;
     margin-right: 25px;
     padding: 35px 0;
-    color: var(--bs-dark) !important;
+    /* color: var(--bs-dark) !important; */
+     /* color: #ff8cac !important; */
     font-size: 16px;
     font-weight: 400;
     outline: none;
     transition: .5s;
+     font-weight: bold;
+    
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
@@ -209,10 +212,15 @@
     color: var(--dark) !important;
 }
 
-.navbar-light .navbar-nav .nav-link:hover,
+/* .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--bs-primary) !important;
+} */
+ .navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #ff8cac !important;
 }
+
 
 .navbar-light .navbar-brand img {
     max-height: 50px;
@@ -310,7 +318,8 @@
         height: 2px;
         bottom: -1px;
         left: 50%;
-        background: var(--bs-primary);
+        /* background: var(--bs-primary); */
+         background: #ff8cac !important;
         transition: .5s;
     }
 
@@ -521,7 +530,7 @@
 
 .service .service-item:hover .service-content .service-content-inner {
     position: relative;
-    color: var(--bs-white) !important;
+    color:#8f8b69;
     z-index: 9;
 }
 .service .service-item:hover .service-content .service-content-inner h5 {
@@ -1179,3 +1188,42 @@
     background: var(--bs-dark) !important;
 }
 /*** copyright end ***/
+
+.service-btn {
+  display: inline-block;
+  background-color:#14c9c5; /* professional yellow */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  
+}
+
+.service-btn:hover {
+  background-color: #e0a800; /* darker gold on hover */
+  color: #000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.d-flex a {
+  transition: color 0.3s ease;
+}
+
+.d-flex a:hover {
+  color:black !important; /* Yellow text on hover */
+}
+
+.d-flex a:hover i {
+  color: black !important; /* Yellow icon on hover */
+}
+
+body p{
+    color: #000;
+    font-size: 20px;
+}
+
+body{
+ color: #6f6e64;
+}
