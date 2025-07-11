@@ -340,14 +340,14 @@
 
 .header-carousel .owl-nav .owl-prev {
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 30px;
+    height: 30px;
     top: 50%;
     left: 20px;
     transform: translateY(-50%);
     border-radius: 50%;
-    background: var(--bs-primary);
-    color: var(--bs-white);
+     background: var(--bs-light);
+    color: var(--bs-primary);
     font-size: 30px;
     display: flex;
     align-items: center;
@@ -357,14 +357,14 @@
 
 .header-carousel .owl-nav .owl-next {
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 30px;
+    height: 30px;
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
     border-radius: 50%;
-    background: var(--bs-primary);
-    color: var(--bs-white);
+     background: var(--bs-light);
+    color: var(--bs-primary);
     font-size: 30px;
     display: flex;
     align-items: center;
@@ -379,8 +379,8 @@
 
 .header-carousel .owl-nav .owl-prev:hover,
 .header-carousel .owl-nav .owl-next:hover {
-    box-shadow: inset 150px 0 0 0 var(--bs-light) !important;
-    color: var(--bs-primary) !important;
+   box-shadow: inset 100px 0 0 0 #e0a800 !important;
+    color: #ffffff !important; 
 }
 
 @media (max-width: 576px) {
@@ -833,8 +833,8 @@
     top: 50%;
     left: -20px;
     transform: translateY(-50%);
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -850,8 +850,8 @@
     top: 50%;
     right: -20px;
     transform: translateY(-50%);
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -863,10 +863,16 @@
 }
 
 
-.testimonial .testimonial-carousel .owl-nav .owl-prev:hover,
+/* .testimonial .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial .testimonial-carousel .owl-nav .owl-next:hover {
     box-shadow: inset 100px 0 0 0 var(--bs-primary) !important;
     color: var(--bs-white) !important;
+} */
+
+.testimonial .testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial .testimonial-carousel .owl-nav .owl-next:hover {
+    box-shadow: inset 100px 0 0 0 #e0a800 !important;
+    color: #ffffff !important; 
 }
 
 
