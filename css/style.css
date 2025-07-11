@@ -807,7 +807,7 @@
 
 /*** testimonial Start ***/
 .testimonial {
-    background: linear-gradient(rgba(21, 185, 217, 0.9), rgba(21, 185, 217, 0.9)), url(../img/carousel-1.jpg);
+    background: linear-gradient(rgba(116, 117, 117, 0.9), rgba(21, 22, 22, 0.9)), url(../img/carousel-1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -823,12 +823,6 @@
     background: transparent;
 }
 
-.testimonial .testimonial-item .testimonial-inner .testimonial-inner-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 5px solid var(--bs-white);
-}
 
 .testimonial .testimonial-carousel.owl-carousel {
     position: relative;
@@ -1226,4 +1220,275 @@ body p{
 
 body{
  color: #6f6e64;
+}
+
+.faq-one {
+    position: relative;
+    display: block;
+    /* background: #494952; */
+    padding: 120px 0px 250px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.faq-one .shape1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.faq-one__inner {
+    position: relative;
+    display: block;
+}
+
+.faq-one__inner .big-title {
+    position: absolute;
+    top: 0;
+    left: -180px;
+    transform: rotate(180deg) translateX(0%);
+    width: max-content;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.faq-one__inner .big-title h2 {
+    color: #daa52038;
+    font-size: 200px;
+    line-height: 0.9em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.faq-one__accrodion {
+    position: relative;
+    display: block;
+    max-width: 870px;
+    width: 100%;
+    float: right;
+}
+
+.faq-one__accrodion .accrodion {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    transition: all 500ms ease;
+}
+
+.faq-one__accrodion .accrodion:last-child {
+    margin-bottom: 0px;
+}
+
+.faq-one__accrodion .accrodion .accrodion-title {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    transition: all 500ms ease;
+    background:black;
+    border-radius: 0px;
+    padding-top: 23px;
+    padding-left: 40px;
+    padding-bottom: 22px;
+    padding-right: 40px;
+}
+
+.faq-one__accrodion .accrodion .accrodion-title.active {
+    padding-bottom: 22px;
+}
+
+.faq-one__accrodion .accrodion .accrodion-title h3 {
+    color: var(--thm-black);
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    transition: all 500ms ease;
+    font-family: Helvetica;
+}
+
+.faq-one__accrodion .accrodion .accrodion-title h3::before {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background: var(--thm-primary);
+    border: 0px solid var(--thm-primary);
+    border-radius: 0%;
+    color: var(--thm-white);
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    transform: translateY(-50%);
+    transition: all 500ms ease;
+    font-family: 'icomoon' !important;
+    content: "\e90d";
+}
+
+.faq-one__accrodion .accrodion.active .accrodion-title h3::before {
+    content: "\e911";
+    font-family: 'icomoon' !important;
+    color: var(--thm-white);
+    background: var(--thm-black);
+}
+
+
+.faq-one__accrodion .accrodion .accrodion-content {
+    position: relative;
+    display: none;
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-bottom: 39px;
+    padding-right: 40px;
+    background: #ffffff;
+}
+
+.faq-one__accrodion .accrodion .accrodion-content .inner {
+    position: relative;
+    display: block;
+    background-color: var(--thm-gray-bg);
+    padding: 22px 30px 22px;
+}
+
+.faq-one__accrodion .accrodion .accrodion-content .inner p {
+    margin: 0;
+    color: var(--thm-black);
+}
+.faq-one__accrodion .accrodion .accrodion-content {
+    position: relative;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0 40px;
+    background: #ffffff;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+}
+.faq-one__accrodion .accrodion.active .accrodion-content {
+    max-height: 500px; /* enough height to hold content */
+    padding-top: 0px;
+    padding-bottom: 39px;
+}
+
+.three-steps {
+  background: #fdfdfd;
+  padding: 60px 20px;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.three-steps .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.three-steps .step {
+  flex: 1 1 30%;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.three-steps h3 {
+  color: #b98b0b;
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.three-steps ul {
+  padding-left: 20px;
+}
+
+.three-steps li {
+  margin-bottom: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .three-steps .container {
+    flex-direction: column;
+  }
+
+  .three-steps .step {
+    flex: 1 1 100%;
+  }
+}
+
+.three-steps button {
+  margin: 40px auto 0;
+  display: block;
+  background-color: #b98b0b; /* Gold tone */
+  color: #fff;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.three-steps button:hover {
+  background-color: #a37a0a;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+/* Customize the form background and text */
+.appointment-form {
+  background-color: #f9f9f9; /* Light background */
+  color: #333; /* Dark text */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Text color inside form */
+.appointment-form .form-control,
+.appointment-form .form-select,
+.appointment-form textarea {
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+/* Placeholder text color */
+.appointment-form .form-control::placeholder,
+.appointment-form textarea::placeholder {
+  color: #999;
+}
+
+/* Button styling */
+.appointment-form button {
+  background-color: #b98b0b; /* Golden tone */
+  color: #fff;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.appointment-form button:hover {
+  background-color: #a07708;
+}
+
+
+.footer-item a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-item a:hover {
+  color: #b98b0b;
+}
+
+body p{
+    font-family: sans-serif;
+
 }
